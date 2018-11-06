@@ -1,0 +1,13 @@
+html, body, .container-fluid {
+    background-color: #6a6a6a;
+}
+
+hr { color: #928aff; }
+
+#container { margin-top: 1em; }
+
+#passwordItems { height: 300px; overflow-y: auto; overflow-x: hidden; }
+
+.pwditem, .newpwditem { margin-bottom: 0.5em; }
+
+#message { margin: 0.5em 1em; color: #ffffff; }

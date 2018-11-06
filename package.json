@@ -1,0 +1,31 @@
+{
+  "name": "jpwdmanager",
+  "version": "1.0.0",
+  "description": "simple password manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetcanozturk/JPwdManager.git"
+  },
+  "keywords": [
+    "password",
+    "manager",
+    "javascript",
+    "nodejs",
+    "electron"
+  ],
+  "author": "Ahmetcan Ozturk",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ahmetcanozturk/JPwdManager/issues"
+  },
+  "homepage": "https://github.com/ahmetcanozturk/JPwdManager#readme",
+  "devDependencies": {
+    "electron": "^3.0.6"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,5 @@
+{
+    "IV_LENGTH" : 16,
+    "ALGORITHM" : "AES-256-CBC",
+    "PWDLENGTH" : 16
+}

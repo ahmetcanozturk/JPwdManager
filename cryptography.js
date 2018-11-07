@@ -6,8 +6,8 @@
             1.0 release 2018-11-03
 */
 const crypto = require('crypto');
-const ec = require("./content/encryptionKey.json");
-const settings = require("./content/settings.json");
+const ec = require("./appdata/encryptionKey.json");
+const settings = require("./appdata/settings.json");
 
 // encryption key
 // get the encryption key from file or user environment

@@ -6,7 +6,7 @@
             1.0 release 2018-11-03
 */
 
-const settings = require("./content/settings.json");
+const settings = require("./appdata/settings.json");
 
 // password length for random generation
 const PWDLENGTH = settings.PWDLENGTH;

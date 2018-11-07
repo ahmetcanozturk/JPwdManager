@@ -11,7 +11,7 @@ var cryp = require("./cryptography");
 // load data from data store
 exports.loadJsonData = (callback) => {
     let jsonData = null;
-    fs.readFile("./content/data.json", "utf8", function(err, data) {
+    fs.readFile("./appdata/data.json", "utf8", function(err, data) {
         if(err) return callback(null);
         jsonData = JSON.parse(data);
         callback(jsonData);
@@ -38,7 +38,7 @@ exports.updateJsonData = (key, newKey, value, callback) => {
             return;
         }
 
-        fs.writeFile("./content/data.json", JSON.stringify(jsonData, null, 2), function (err) {
+        fs.writeFile("./appdata/data.json", JSON.stringify(jsonData, null, 2), function (err) {
             if (err) 
                 message = "Error occured";
             else
@@ -68,7 +68,7 @@ exports.addJsonData = (key, value, callback) => {
         let element = { "key": cryp.encrypt(key), "value": cryp.encrypt(value) };
         elements.push(element);
 
-        fs.writeFile("./content/data.json", JSON.stringify(jsonData, null, 2), function (err) {
+        fs.writeFile("./appdata/data.json", JSON.stringify(jsonData, null, 2), function (err) {
             if (err) {
                 callback(null);
                 return;
@@ -99,7 +99,7 @@ exports.deleteJsonData = (key, callback) => {
         }
         elements.splice(index, 1);
 
-        fs.writeFile("./content/data.json", JSON.stringify(jsonData, null, 2), function (err) {
+        fs.writeFile("./appdata/data.json", JSON.stringify(jsonData, null, 2), function (err) {
             if (err) 
                 message = "Error occured";
             else

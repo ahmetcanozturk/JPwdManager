@@ -3,9 +3,9 @@
 JPwdManager is a platform independent simple password manager developed with javascript, NodeJS and Electron.
 
 #### Content Files
-  - passwords are stored in encrypted json file (content/data.json) file.
-  - symmetric encryption key is stored in content/encryptionKey.json
-  - encyrption algorithm, initialization vector length and password length stored in settings.json
+  - passwords are stored in encrypted json file (appdata/data.json) file.
+  - symmetric encryption key is stored in appdata/encryptionKey.json
+  - encyrption algorithm, initialization vector length and password length stored in appdata/settings.json
 
 #### Releases
 

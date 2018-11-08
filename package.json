@@ -27,8 +27,5 @@
   "devDependencies": {
     "electron": "^3.0.6"
   },
-  "dependencies": {},
-  "extraFiles": [
-    "appdata"
-  ]
+  "dependencies": {}
 }

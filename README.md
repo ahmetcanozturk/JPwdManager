@@ -9,6 +9,6 @@ JPwdManager is a platform independent simple password manager application develo
 
 #### Releases
 
-Release for Windows & Linux platform is available under [Releases](https://github.com/ahmetcanozturk/JPwdManager/releases).
+Release for Windows platform is available under [Releases](https://github.com/ahmetcanozturk/JPwdManager/releases).
 
 JPwdManager is an Electron desktop application, creating releases for other platforms defined in [electron application distribution page](https://electronjs.org/docs/tutorial/application-distribution).

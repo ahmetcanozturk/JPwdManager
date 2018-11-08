@@ -1,6 +1,6 @@
 # JPwdManager
 
-JPwdManager is a platform independent simple password manager developed with javascript, NodeJS and Electron.
+JPwdManager is a platform independent simple password manager application developed with javascript, NodeJS and Electron.
 
 #### Content Files
   - passwords are stored in encrypted json file (appdata/data.json) file.
@@ -9,5 +9,5 @@ JPwdManager is a platform independent simple password manager developed with jav
 
 #### Releases
 
-Release for Windows platform is available under [Releases](https://github.com/ahmetcanozturk/JPwdManager/releases).
+Release for Windows & Linux platform is available under [Releases](https://github.com/ahmetcanozturk/JPwdManager/releases).
 JPwdManager is an Electron desktop application, creating releases for other platforms defined in [electron application distribution page](https://electronjs.org/docs/tutorial/application-distribution).

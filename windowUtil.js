@@ -4,6 +4,7 @@
     version history:
             0.1 initial 2018-10-28
             1.0 release 2018-11-03
+            1.0.1 update 2018-11-08
 */
 var hd = require("./handleData");
 var utils = require("./utils");
@@ -83,7 +84,13 @@ exports.deleteItem = (item) => {
     let btnID = $(item).attr("id");
     let index = parseInt(btnID.replace("dbtn_", ""));
     let hdnID = "#hdn".concat("_", index.toString());
+    let keyID = "#key".concat("_", index.toString());
     let itemID = "#item".concat("_", index.toString());
+
+    let keyVal = $(keyID).val();
+    let conf = confirm("Are you sure to delete the key ".concat(keyVal));
+    if(!conf)
+        return;
 
     hd.deleteJsonData($(hdnID).val(), function(message) {
         // refresh items list after remove

@@ -4,6 +4,7 @@
     version history:
             0.1 initial 2018-10-28
             1.0 release 2018-11-03
+            1.0.1 update 2018-11-08
 */
 
 const {app, BrowserWindow, Menu, dialog} = require('electron');
@@ -54,6 +55,10 @@ app.once('ready', () => {
   }))
 
   window.once('ready-to-show', () => {
-      window.show()
+      window.show();
   })
-})
+});
+
+app.on('window-all-closed', () => {
+  app.quit();
+});
